@@ -1,3 +1,11 @@
+Contrainte supplémentaire : 
+
+- Utilisation de SASS obligatoire.
+- Utilisation de JQUERY obligatoire.
+- Ajout d'un input type date pour choisir la date finale.
+- Mémorisation de cette dernière en local storage ou cookie.
+- En teme de temps 17 juillet 2022
+
 # Frontend Mentor - Launch countdown timer
 
 ![Design preview for the Launch countdown timer coding challenge](./design/desktop-preview.jpg)
