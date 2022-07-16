@@ -1,3 +1,32 @@
+header
+{
+    display:flex;
+    height:60px;
+    align-items: center;
+    margin-left:2%;
+}
+main
+{
+    width:100%;
+    display: flex;
+    height:350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#timer_contain
+{
+    display:flex;
+}
+h1,header {
+    color : $white
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    font-size : 120%;
+}
+
 footer
 {
     position:relative;
@@ -9,6 +38,15 @@ footer
             width:100%;
         }
     }
+    #social_network
+    {
+        display:flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        position:absolute;
+        top:55%;
+    }
     
     .attribution {
         position:absolute;
@@ -18,7 +56,7 @@ footer
         transform:translate(-50%);
         font-size: 11px; text-align: center;
         a{
-            color: hsl(228, 45%, 44%);
+            color: hsl(228, 96%, 69%);
         }
      }
     

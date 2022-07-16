@@ -1,0 +1,95 @@
+#background {
+    position: absolute;
+    width: 100%;
+    z-index:-1
+}
+#date_target
+{
+    margin-left:20px;
+    z-index:1;
+}
+
+.time_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-left: 35px;
+    width: 150px;
+
+
+
+    .time_element_number_contain {
+        border-radius: 10px;
+        background-color: #34364F;
+        height: 150px;
+        margin-bottom: 20px;
+        box-shadow:3px 11px 0px -2px #000000;
+    }
+
+    .ombre_top {
+        border-radius: 10px 10px 0px 0px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+        background-color: #2c2c447c;
+        height: 50%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+
+    &_number_contain {
+        height: 150px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_name {
+        color: $primary-color;
+        font-size: 0.7em;
+        letter-spacing: 4px;
+    }
+
+    .number {
+        color: $secondary-color;
+        font-size: 60px;
+    }
+
+}
+
+.logo {
+    margin-left: 20px;
+    fill: #8385A9;
+    width: 24px;
+    height: 24px;
+}
+
+.logo:hover {
+    cursor: pointer;
+    fill: $secondary-color;
+}
+
+.demi_cercle {
+    position: absolute;
+    height: 0.5rem;
+    width: 1rem;
+    background: black;
+    border-radius: 2rem 2rem 0 0;
+    top: 50%;
+
+    &_gauche {
+        left: 0px;
+        transform: translate(-28%, -50%) rotate(90deg);
+
+    }
+
+    &_droit {
+        right: 0px;
+        transform: translate(28%, -50%) rotate(-90deg);
+    }
+
+}

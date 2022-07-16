@@ -10,6 +10,9 @@ body
 {
     display:flex;
     height:100vh;
+    text-transform: uppercase;
     justify-content: space-between;
     flex-direction: column;
+    background: rgb(52,54,80);
+    background: linear-gradient(#1E1E28, #211D2B, #231D2B);
 }

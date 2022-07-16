@@ -12,6 +12,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
+  text-transform: uppercase;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -19,6 +20,163 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #343650;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1E1E28), color-stop(#211D2B), to(#231D2B));
+  background: linear-gradient(#1E1E28, #211D2B, #231D2B);
+}
+
+#background {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+#date_target {
+  margin-left: 20px;
+  z-index: 1;
+}
+
+.time_element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-left: 35px;
+  width: 150px;
+}
+
+.time_element .time_element_number_contain {
+  border-radius: 10px;
+  background-color: #34364F;
+  height: 150px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 3px 11px 0px -2px #000000;
+          box-shadow: 3px 11px 0px -2px #000000;
+}
+
+.time_element .ombre_top {
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+  background-color: #2c2c447c;
+  height: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.time_element_number_contain {
+  height: 150px;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.time_element_name {
+  color: #8486a9;
+  font-size: 0.7em;
+  letter-spacing: 4px;
+}
+
+.time_element .number {
+  color: #fb6087;
+  font-size: 60px;
+}
+
+.logo {
+  margin-left: 20px;
+  fill: #8385A9;
+  width: 24px;
+  height: 24px;
+}
+
+.logo:hover {
+  cursor: pointer;
+  fill: #fb6087;
+}
+
+.demi_cercle {
+  position: absolute;
+  height: 0.5rem;
+  width: 1rem;
+  background: black;
+  border-radius: 2rem 2rem 0 0;
+  top: 50%;
+}
+
+.demi_cercle_gauche {
+  left: 0px;
+  -webkit-transform: translate(-28%, -50%) rotate(90deg);
+          transform: translate(-28%, -50%) rotate(90deg);
+}
+
+.demi_cercle_droit {
+  right: 0px;
+  -webkit-transform: translate(28%, -50%) rotate(-90deg);
+          transform: translate(28%, -50%) rotate(-90deg);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2%;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 350px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#timer_contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h1, header {
+  color: white;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  font-size: 120%;
 }
 
 footer {
@@ -33,6 +191,21 @@ footer .montain img {
   width: 100%;
 }
 
+footer #social_network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 55%;
+}
+
 footer .attribution {
   position: absolute;
   color: white;
@@ -45,5 +218,5 @@ footer .attribution {
 }
 
 footer .attribution a {
-  color: #3e52a3;
+  color: #6482fc;
 }
