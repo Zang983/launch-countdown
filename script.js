@@ -5,6 +5,7 @@ let minutes_block = $("#minutes")
 let seconds_block = $("#seconds")
 let target = localStorage.getItem("date")
 let inputDate = $("#date_target")
+let launch = $("#launch")
 let resetBtn = $("#reset")
 let time="";
 let days = 0; hours = 0; minutes = 0; seconds = 0;
@@ -13,7 +14,7 @@ if (target != null) {
   target = new Date(target).getTime()
 }
 /* Event sur le changement de date. */
-inputDate.bind("change", () => {
+launch.bind("click", () => {
   if (new Date(inputDate.val()).getTime() <= new Date().getTime()) {
     alert("Problème de sélection de date")
   }
