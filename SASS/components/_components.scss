@@ -1,12 +1,30 @@
 #background {
     position: absolute;
     width: 100%;
-    z-index:-1
+    z-index:-1;
+    @media screen and (max-width : 768px)  {
+       height:100%;
+       object-fit: cover;
+    }
+    
 }
 #date_target
 {
     margin-left:20px;
     z-index:1;
+}
+
+#timer_contain
+{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    @media screen and (max-width : 768px)  {
+        max-width:100%;
+
+    }
+
+    
 }
 
 .time_element {
@@ -15,17 +33,11 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    margin-left: 35px;
     width: 150px;
-
-
-
-    .time_element_number_contain {
-        border-radius: 10px;
-        background-color: #34364F;
-        height: 150px;
-        margin-bottom: 20px;
-        box-shadow:3px 11px 0px -2px #000000;
+    @media screen and (max-width : 768px)  {
+        min-width:70px; 
+        max-width:70px; 
+        min-height:70px;
     }
 
     .ombre_top {
@@ -40,13 +52,21 @@
     }
 
     &_number_contain {
-        height: 150px;
-        width: 100%;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 10px;
+        background-color: #34364F;
+        margin-bottom: 20px;
+        box-shadow:3px 11px 0px -2px #000000;
+        height: 150px;
+        width: 100%;
+        @media screen and (max-width : 768px)  {
+            height:70px;
+        }
     }
+
 
     &_name {
         color: $primary-color;
@@ -57,12 +77,16 @@
     .number {
         color: $secondary-color;
         font-size: 60px;
+        @media screen and (max-width : 768px)  {
+            font-size: 25px;
+        }
+        
     }
 
 }
 
 .logo {
-    margin-left: 20px;
+    margin-left: 30px;
     fill: #8385A9;
     width: 24px;
     height: 24px;
@@ -80,6 +104,11 @@
     background: black;
     border-radius: 2rem 2rem 0 0;
     top: 50%;
+    @media screen and (max-width : 768px)  {
+        height : 0.2rem;
+        width:0.5rem;
+
+     }
 
     &_gauche {
         left: 0px;

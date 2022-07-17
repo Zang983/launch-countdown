@@ -8,7 +8,6 @@ let inputDate = $("#date_target")
 let resetBtn = $("#reset")
 let time="";
 let days = 0; hours = 0; minutes = 0; seconds = 0;
-let days_value = "", hours_value = "", minutes_value = "", seconds_value = ""
 
 if (target != null) {
   target = new Date(target).getTime()
